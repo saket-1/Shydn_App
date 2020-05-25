@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.shydn.login"
+    xmlns:dist="http://schemas.android.com/apk/distribution">
+
+    <dist:module dist:instant="true" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name="com.shydn.login.ProductDetailsActivity"/>
+        <activity android:name="com.shydn.login.Productitem"/>
+        <activity android:name="com.shydn.login.ForgotPasswordActivity"/>
+        <activity android:name="com.shydn.login.MainActivity" android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="fullSensor"/>
+        <activity android:name="com.shydn.login.LoginActivity"/>
+        <activity android:name="com.shydn.login.StartActivity"/>
+        <activity android:name="com.shydn.login.RegisterActivity"/>
+        <activity android:name="com.shydn.login.TimeActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.shydn.login.SomeActivity" />
+        <activity android:name="com.shydn.login.ProfileActivity" />
+        <activity android:name="com.shydn.login.VerifyPhoneActivity" />
+        <activity android:name="com.shydn.login.PhoneActivity" />
+        <activity android:name="com.shydn.login.LoginDetailActivity" />
+        <activity android:name="com.shydn.login.ForgotDeviceRegistration" />
+        <activity android:name="com.shydn.login.ForgotVerifyActivity" />
+    </application>
+
+</manifest>

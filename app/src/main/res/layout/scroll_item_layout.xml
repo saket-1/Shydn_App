@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="205dp"
+    android:layout_height="240dp"
+    android:layout_margin="4dp"
+    android:background="@drawable/slider_background"
+    android:elevation="3dp">
+
+    <ImageView
+        android:id="@+id/data_product_image"
+        android:layout_width="177dp"
+        android:layout_height="148dp"
+        android:foregroundGravity="center_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_about_us" />
+
+    <TextView
+        android:id="@+id/data_product_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/data_product_image"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="-2dp"
+        android:layout_marginEnd="8dp"
+        android:text="Samsung TV 12345hg"
+        android:textAlignment="textStart"
+        android:textColor="#000"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/data_product_desc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/data_product_image" />
+
+    <TextView
+        android:id="@+id/data_product_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/data_product_name"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center_horizontal|left"
+        android:text="Mnbvc njjg  kjhg"
+        android:textColor="#000"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toTopOf="@+id/data_product_price"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/data_product_image" />
+
+    <TextView
+        android:id="@+id/data_product_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/data_product_desc"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center_horizontal"
+        android:text="Rs.50,000"
+        android:textColor="#070606"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="231dp" />
+</RelativeLayout>
